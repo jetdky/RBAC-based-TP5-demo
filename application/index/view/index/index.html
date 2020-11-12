@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" type="text/css" href="static/libs/bootstrap-3.3.7/dist/css/bootstrap.css">
+<body>
+
+<div class="container">
+    <h1>菜单</h1>
+    <hr>
+
+    <div class="panel-group" id="pg">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <a href="#article" data-toggle="collapse" data-parent="#pg">
+                    <h3 class="panel-title">文章管理</h3>
+                </a>
+            </div>
+            <div id="article" class="collapse in">
+                <div class="panel-body" style="padding: 0;">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{:url('Article/index')}">文章列表</a></li>
+                        <li class="list-group-item"><a href="{:url('Article/index')}">发表文章</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <a href="#user" data-toggle="collapse" data-parent="#pg">
+                    <h3 class="panel-title">用户管理</h3>
+                </a>
+            </div>
+            <div id="user" class="collapse">
+                <div class="panel-body" style="padding: 0;">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{:url('User/index')}">用户列表</a></li>
+                        <li class="list-group-item"><a href="{:url('User/index')}">添加用户</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <a href="#comment" data-toggle="collapse" data-parent="#pg">
+                    <h3 class="panel-title">评论管理</h3>
+                </a>
+            </div>
+            <div id="comment" class="collapse">
+                <div class="panel-body" style="padding: 0;">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{:url('Comment/index')}">评论列表</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="static/js/jquery-3.4.1.js"></script>
+<script src="static/libs/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
